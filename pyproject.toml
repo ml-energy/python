@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlenergy"
+version = "0.0.1"
+description = "ML.ENERGY namespace package"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [
+    {name = "Jae-Won Chung", email = "jaewon.chung.cs@gmail.com"},
+]
+keywords = ["machine-learning", "energy", "gpu"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = []
+
+[project.optional-dependencies]
+data = ["mlenergy-data"]
+all = ["mlenergy[data]"]
+
+[project.urls]
+Repository = "https://github.com/ml-energy/python"
+Issues = "https://github.com/ml-energy/python/issues"
+
+[tool.setuptools]
+py-modules = []
