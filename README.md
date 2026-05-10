@@ -9,9 +9,9 @@ This distribution contains no code of its own. It exists to give the ecosystem a
 `pip install mlenergy` alone installs nothing — every subpackage is opt-in:
 
 ```bash
-pip install mlenergy[all]    # all subpackages
-pip install mlenergy[data]   # data toolkit (https://ml.energy/data)
-pip install mlenergy-data    # equivalent: data toolkit, directly
+pip install mlenergy[all]         # all subpackages
+pip install mlenergy[data]        # data toolkit (https://ml.energy/data)
+pip install mlenergy[benchmark]   # benchmark runner (https://github.com/ml-energy/benchmark)
 ```
 
 The Python import namespace `mlenergy` is a [PEP 420 implicit namespace package](https://peps.python.org/pep-0420/). Each subpackage (`mlenergy.data`, ...) is shipped by its own distribution and merged at import time.
@@ -19,6 +19,7 @@ The Python import namespace `mlenergy` is a [PEP 420 implicit namespace package]
 | distribution | imports as | repo |
 |---|---|---|
 | `mlenergy-data` | `mlenergy.data` | [ml-energy/data](https://github.com/ml-energy/data) |
+| `mlenergy-benchmark` | `mlenergy.benchmark` | [ml-energy/benchmark](https://github.com/ml-energy/benchmark) |
 
 ## Adding a new subpackage
 
